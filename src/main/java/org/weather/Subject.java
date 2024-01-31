@@ -1,7 +1,5 @@
 package org.weather;
 
-import org.weather.displays.Observer;
-
 /**
  * Objects use the Subject interface to register as observers
  * and also to remove themselves from being observers
