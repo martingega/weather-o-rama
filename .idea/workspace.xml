@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b13a26f-394a-4e50-bc0e-862fa26cc45b" name="Changes" comment="inserted DisplayElement interface that all the displays implement">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/weather/displays/CurrentConditionsDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/weather/displays/CurrentConditionsDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/weather/displays/ForecastDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/weather/displays/ForecastDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/weather/displays/StatisticsDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/weather/displays/StatisticsDisplay.java" afterDir="false" />
+    <list default="true" id="3b13a26f-394a-4e50-bc0e-862fa26cc45b" name="Changes" comment="added comments for the display classes">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/weather/WeatherData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/weather/WeatherData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706745659281</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added comments for the display classes">
+      <created>1706745808208</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706745808209</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +110,7 @@
     <MESSAGE value="inserted the Subject and Observer interface that will later be used for the Observer pattern" />
     <MESSAGE value="FIX: moved Observer class out of the display package" />
     <MESSAGE value="inserted DisplayElement interface that all the displays implement" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserted DisplayElement interface that all the displays implement" />
+    <MESSAGE value="added comments for the display classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments for the display classes" />
   </component>
 </project>
