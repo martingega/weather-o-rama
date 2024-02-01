@@ -1,7 +1,7 @@
 package org.weather.displays;
 
 /**
- * This display shows the weather forecast based on the barometer
+ * This display element keeps track of the minimium/average/maximum measurements and displays them
  */
 public class StatisticsDisplay implements DisplayElement {
 

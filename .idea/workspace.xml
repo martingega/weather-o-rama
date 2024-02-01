@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b13a26f-394a-4e50-bc0e-862fa26cc45b" name="Changes" comment="implemented the Subject interface in WeatherData">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/weather/displays/CurrentConditionsDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/weather/displays/CurrentConditionsDisplay.java" afterDir="false" />
+    <list default="true" id="3b13a26f-394a-4e50-bc0e-862fa26cc45b" name="Changes" comment="created WeatherStation class as main class and tested the pattern">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,6 +38,26 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="WeatherStation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.weather.WeatherStation" />
+      <module name="weather-o-rama.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.weather.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WeatherStation" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -97,7 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1706746669300</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="implemented the CurrentConditionsDisplay">
+      <created>1706747166043</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706747166043</updated>
+    </task>
+    <task id="LOCAL-00009" summary="created WeatherStation class as main class and tested the pattern">
+      <created>1706747516255</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706747516255</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +153,8 @@
     <MESSAGE value="inserted DisplayElement interface that all the displays implement" />
     <MESSAGE value="added comments for the display classes" />
     <MESSAGE value="implemented the Subject interface in WeatherData" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented the Subject interface in WeatherData" />
+    <MESSAGE value="implemented the CurrentConditionsDisplay" />
+    <MESSAGE value="created WeatherStation class as main class and tested the pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="created WeatherStation class as main class and tested the pattern" />
   </component>
 </project>
