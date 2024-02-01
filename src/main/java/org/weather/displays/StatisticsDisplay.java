@@ -38,8 +38,8 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     public void display() {
         // display the average, min and max measurements
         double avgTemperature = temperatureSum / numReadings;
-        System.out.println("Average temperature: " + avgTemperature);
-        System.out.println("Maximum temperature: " + maxTemperature);
         System.out.println("Minimum temperature: " + minTemperature);
+        System.out.println("Maximum temperature: " + maxTemperature);
+        System.out.println("Average temperature: " + avgTemperature);
     }
 }

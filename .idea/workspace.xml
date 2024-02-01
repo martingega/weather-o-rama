@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b13a26f-394a-4e50-bc0e-862fa26cc45b" name="Changes" comment="created WeatherStation class as main class and tested the pattern" />
+    <list default="true" id="3b13a26f-394a-4e50-bc0e-862fa26cc45b" name="Changes" comment="switched the Observer pattern from PUSH mode to PULL mode, the observers retrieve only the data they are interested in" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706747516255</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="switched the Observer pattern from PUSH mode to PULL mode, the observers retrieve only the data they are interested in">
+      <created>1706824082655</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706824082655</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +160,7 @@
     <MESSAGE value="implemented the Subject interface in WeatherData" />
     <MESSAGE value="implemented the CurrentConditionsDisplay" />
     <MESSAGE value="created WeatherStation class as main class and tested the pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="created WeatherStation class as main class and tested the pattern" />
+    <MESSAGE value="switched the Observer pattern from PUSH mode to PULL mode, the observers retrieve only the data they are interested in" />
+    <option name="LAST_COMMIT_MESSAGE" value="switched the Observer pattern from PUSH mode to PULL mode, the observers retrieve only the data they are interested in" />
   </component>
 </project>
