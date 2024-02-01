@@ -1,6 +1,6 @@
 package org.weather.displays;
 
-public class ForecastDisplay {
+public class ForecastDisplay implements DisplayElement {
 
     private double temperature;
     private double humidity;
@@ -10,5 +10,10 @@ public class ForecastDisplay {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
+    }
+
+    @Override
+    public void display() {
+        // display the forecast
     }
 }

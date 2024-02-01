@@ -1,6 +1,6 @@
 package org.weather.displays;
 
-public class CurrentConditionsDisplay {
+public class CurrentConditionsDisplay implements DisplayElement {
 
     private double temperature;
     private double humidity;
@@ -10,5 +10,10 @@ public class CurrentConditionsDisplay {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
+    }
+
+    @Override
+    public void display() {
+        // display current measurements
     }
 }
