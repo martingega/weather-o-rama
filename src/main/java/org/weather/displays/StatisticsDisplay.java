@@ -1,7 +1,7 @@
 package org.weather.displays;
 
 import org.weather.Observer;
-import org.weather.Subject;
+import org.weather.WeatherData;
 
 /**
  * This display element keeps track of the minimium/average/maximum measurements and displays them
@@ -12,14 +12,15 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     private double minTemperature = 300;
     private double temperatureSum = 0.0;
     private int numReadings;
-    private Subject weatherData;
+    private WeatherData weatherData;
 
-    public StatisticsDisplay(Subject weatherData) {
+    public StatisticsDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 
-    public void update(double temperature, double humidity, double pressure) {
+    public void update() {
+        double temperature = weatherData.getTemperature();
         temperatureSum += temperature;
         numReadings++;
         // calcolo della temperatura massima

@@ -1,7 +1,7 @@
 package org.weather.displays;
 
 import org.weather.Observer;
-import org.weather.Subject;
+import org.weather.WeatherData;
 
 /**
  * This display element shows the current measurements from the WeatherData object.
@@ -10,25 +10,22 @@ import org.weather.Subject;
  */
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 
-    private final Subject weatherData;
+    private final WeatherData weatherData;
     private double temperature;
     private double humidity;
-    private double pressure;
 
     /*
      * The constructor is passed the weatherData object (the Subject) and we use it to register the display as an observer
      */
-    public CurrentConditionsDisplay(Subject weatherData) {
+    public CurrentConditionsDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 
-    public void update(double temperature, double humidity, double pressure) {
-
-        // when update() is called we save the temperature, humidity and pressure and call display()
-        this.temperature = temperature;
-        this.humidity = humidity;
-        this.pressure = pressure;
+    public void update() {
+        // since the pattern is in PULL mode, get the weather data from the Subject using the WeatherData's getter methods
+        this.temperature = weatherData.getTemperature();
+        this.humidity = weatherData.getHumidity();
         display();
     }
 
@@ -41,6 +38,5 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
         System.out.println("Current conditions");
         System.out.println("Temperature: " + temperature + " F degress");
         System.out.println("Humidity: " + humidity + "%");
-        System.out.println("Pressure: " + pressure);
     }
 }

@@ -1,7 +1,6 @@
 package org.weather.displays;
 
 import org.weather.Observer;
-import org.weather.Subject;
 import org.weather.WeatherData;
 
 /**
@@ -11,19 +10,19 @@ public class ForecastDisplay implements Observer, DisplayElement {
 
     private double currentPressure = 29.92;
     private double lastPressure;
-    private final Subject weatherData;
+    private final WeatherData weatherData;
 
     /*
      * The constructor is passed the weatherData object (the Subject) and we use it to register the display as an observer
      */
-    public ForecastDisplay(Subject weatherData) {
+    public ForecastDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 
-    public void update(double temperature, double humidity, double pressure) {
+    public void update() {
         lastPressure = currentPressure;
-        currentPressure = pressure;
+        currentPressure = weatherData.getPressure();
         display();
     }
 

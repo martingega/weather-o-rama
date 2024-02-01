@@ -6,6 +6,6 @@ package org.weather;
  */
 public interface Observer {
 
-    void update(double temperature, double humidity, double pressure); // temperature, humidity and pressure are the state values the Observers get from the Subject when a weather measurement changes
+    void update(); // PULL mode for Observer
 
 }
