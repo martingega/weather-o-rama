@@ -1,5 +1,8 @@
 package org.weather.displays;
 
+/**
+ * This display element shows the current measurements from the WeatherData object
+ */
 public class CurrentConditionsDisplay implements DisplayElement {
 
     private double temperature;

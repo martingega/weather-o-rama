@@ -1,5 +1,8 @@
 package org.weather.displays;
 
+/**
+ * This display shows the weather forecast based on the barometer
+ */
 public class StatisticsDisplay implements DisplayElement {
 
     private double temperature;

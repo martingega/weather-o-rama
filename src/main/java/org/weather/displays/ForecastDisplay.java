@@ -1,5 +1,8 @@
 package org.weather.displays;
 
+/**
+ * This display element keeps track of the minimium/average/maximum measurements and displays them
+ */
 public class ForecastDisplay implements DisplayElement {
 
     private double temperature;
